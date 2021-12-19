@@ -3,7 +3,7 @@
 echo "Update stuff.."
 sudo apt-get update
 echo "install transport, ca-cert, curl, gnupg, lsb"
-sudo apt-get install \
+sudo apt-get install -y \
   apt-transport-https \
   ca-certificates \
   curl \
@@ -18,7 +18,7 @@ echo \
 
 echo "Installing docker..."
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
