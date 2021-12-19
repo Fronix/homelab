@@ -26,6 +26,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 echo "Making docker usable non root"
 sudo groupadd docker
-sudo gpasswd -a $USER docker
 
+echo "Run this command on the user you want to use docker with: sudo gpasswd -a USERNAME docker"
 echo "Install finished! LOGOUT NOW!"
